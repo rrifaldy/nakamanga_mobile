@@ -17,7 +17,6 @@ class _homeState extends State<home> {
     {"nama": "Kuroshijitshu", "gambar": "kuroshijitsu.jpg"},
     {"nama": "Naruto Shippuden", "gambar": "naruto.jpg"},
   ];
-
   _buatlist() async {
     for (var i = 0; i < gmanga.length; i++) {
       final gmanganya = gmanga[i];

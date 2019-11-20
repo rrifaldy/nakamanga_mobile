@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+
+
 class viewManga extends StatefulWidget {
   List list;
   int index;

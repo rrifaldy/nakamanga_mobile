@@ -6,7 +6,7 @@ import './genreView.dart';
 class genre extends StatelessWidget {
   Future<List> getData() async {
     final response =
-        await http.get("http://192.168.43.203/nakamanga/public/api/genre");
+        await http.get("http://nakamamg.000webhostapp.com/api/komik");
     return json.decode(response.body);
   }
 

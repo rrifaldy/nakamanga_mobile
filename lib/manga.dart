@@ -2,12 +2,12 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
-import './genreView.dart';
+import './mangaView.dart';
 
 class manga extends StatelessWidget {
   Future<List> getData() async {
     final response =
-        await http.get("http://192.168.43.203/nakamanga/public/api/komik");
+        await http.get("http://nakamamg.000webhostapp.com/api/komik");
     return json.decode(response.body);
   }
 
@@ -48,7 +48,7 @@ class ItemList extends StatelessWidget {
             child: InkWell(
               onTap: () => Navigator.of(context).push(new MaterialPageRoute(
                   builder: (BuildContext context) =>
-                      new Detail(list: list, index: i))),
+                      new viewManga (list: list, index: i))),
               child: new Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: <Widget>[

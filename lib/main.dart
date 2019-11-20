@@ -44,7 +44,7 @@ class _indexState extends State<index> with SingleTickerProviderStateMixin {
       appBar: new AppBar(
         backgroundColor: Colors.indigo[600],
         title: new Text("Nakamanga"),
-       //actions: <Widget>[new Icon(Icons.settings)],
+       actions: <Widget>[new Icon(Icons.search)],
       ),
       body: new IndexedStack(
         index: _selectedIndex,

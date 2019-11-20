@@ -7,7 +7,7 @@ import './mangaView.dart';
 class manga extends StatelessWidget {
   Future<List> getData() async {
     final response =
-        await http.get("http://nakamamg.000webhostapp.com/api/komik");
+        await http.get("http://192.168.43.203/nakamanga/public/api/komik");
     return json.decode(response.body);
   }
 
